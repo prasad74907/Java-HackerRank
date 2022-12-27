@@ -1,0 +1,43 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        String B=sc.next();
+        char[]k=A.toCharArray();
+        char[]j=B.toCharArray();
+        System.out.println(A.length()+B.length());
+        if(A.compareTo(B)>0)
+        {
+            System.out.println("Yes");
+        }
+        else 
+        {
+            System.out.println("No");
+        }
+        int x=(int)A.charAt(0);
+        char a=(char)(x-32);
+        int y=(int)B.charAt(0);
+        char b=(char)(y-32);
+         k[0]=a;
+         j[0]=b;
+         String c="";
+         String d="";
+        for(int i=0;i<k.length;i++)
+        {
+          c=c+k[i];
+        }
+        for(int i=0;i<j.length;i++)
+        {
+          d=d+j[i];
+        }
+        System.out.println(c+" "+d);
+              
+        /* Enter your code here. Print output to STDOUT. */
+        
+    }
+}
